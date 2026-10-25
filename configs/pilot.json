@@ -1,0 +1,31 @@
+{
+  "dataset": "Kullervo/BRIGHT",
+  "revision": "main",
+  "archive_sizes": {
+    "cvprw26_trainval_instance_labels.zip": 31200019,
+    "pre-event.zip": 9901512150,
+    "post-event.zip": 3291986721
+  },
+  "events": {
+    "train": ["bata-explosion", "beirut-explosion"],
+    "val": ["haiti-earthquake"],
+    "test": ["morocco-earthquake"]
+  },
+  "tiles_per_event": 2,
+  "max_buildings_per_tile": 64,
+  "min_bbox_side": 4,
+  "crop_context": 1.4,
+  "seed": 20261023,
+  "network_byte_limit": 1000000000,
+  "storage_byte_limit": 2000000000,
+  "batch_size": 16,
+  "head_epochs": 60,
+  "head_lr": 0.01,
+  "head_weight_decay": 0.01,
+  "ensemble_seeds": [11, 23, 47],
+  "review_fractions": [0.1, 0.2, 0.3],
+  "review_mix_candidates": [0.25, 0.5, 0.75],
+  "random_repeats": 100,
+  "class_names": ["intact", "damaged", "destroyed"],
+  "scope": "Known-building bbox-conditioned classification; pre-event optical and post-event SAR; not detection or structural safety assessment"
+}

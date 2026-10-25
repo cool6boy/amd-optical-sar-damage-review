@@ -1,0 +1,59 @@
+{
+  "dataset": "Kullervo/BRIGHT",
+  "revision": "46f202d9520cb0844a6ca4679d016d0d27a6d58c",
+  "archive_sizes": {
+    "cvprw26_trainval_instance_labels.zip": 31200019,
+    "pre-event.zip": 9901512150,
+    "post-event.zip": 3291986721
+  },
+  "events": {
+    "train": [
+      "bata-explosion",
+      "beirut-explosion",
+      "turkey-earthquake"
+    ],
+    "val": [
+      "haiti-earthquake"
+    ],
+    "test": [
+      "noto-earthquake",
+      "marshall-wildfire"
+    ]
+  },
+  "reserve_val_events": [
+    "libya-flood"
+  ],
+  "tiles_per_event": 2,
+  "tiles_per_event_by_split": {
+    "train": 16,
+    "val": 16,
+    "test": 32
+  },
+  "max_test_tiles_per_event": 64,
+  "max_buildings_per_tile": 64,
+  "min_bbox_side": 4,
+  "crop_context": 1.4,
+  "seed": 20261025,
+  "network_byte_limit": 2000000000,
+  "storage_byte_limit": 4000000000,
+  "batch_size": 16,
+  "head_epochs": 60,
+  "head_lr": 0.01,
+  "head_weight_decay": 0.01,
+  "ensemble_seeds": [11, 23, 47],
+  "review_fractions": [0.1, 0.2, 0.3],
+  "review_mix_candidates": [0.25, 0.5, 0.75],
+  "random_repeats": 100,
+  "class_names": ["intact", "damaged", "destroyed"],
+  "scope": "Known-building bbox-conditioned classification; pre-event optical and post-event SAR; v2 expansion of train/val while preserving event isolation and test secrecy.",
+  "sample_policy": "stratified_train",
+  "allow_missing_val_classes": true,
+  "train_target_min_per_class": 50,
+  "train_intact_cap": 400,
+  "val_target_min_per_class": 20,
+  "test_target_min_buildings": 100,
+  "test_max_buildings_per_event": 400,
+  "prepared_by": "CPU-only data preparation",
+  "status": "locked_before_test_eval",
+  "notes": "Do not reuse v1 test evidence; keep Morocco reserved for v1 history; selection is category-blind and fixed before any test-category inspection."
+}

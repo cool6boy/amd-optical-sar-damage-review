@@ -1,0 +1,29 @@
+{
+  "alpha": 0.25,
+  "candidates": [
+    {
+      "alpha": 0.25,
+      "validation_errors_found_sum": 276
+    },
+    {
+      "alpha": 0.5,
+      "validation_errors_found_sum": 271
+    },
+    {
+      "alpha": 0.75,
+      "validation_errors_found_sum": 261
+    }
+  ],
+  "review_fractions": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "random_repeats": 100,
+  "class_decision": "argmax, fixed before test",
+  "review_score": "alpha*normalized_entropy+(1-alpha)*modal_JSD",
+  "manifest_sha256": "897c287af802c1f545d58f2af9121be851785869b49efd1915ab3e973c40c404",
+  "config_sha256": "21d113763bd98c9d525fab41e12240440b7cce83bf8846d17747eff55b2912d6",
+  "heads_sha256": "1cee7009e468c2ee2fbb1eb73d341ef02477ee1f5f6404e76c5b328f457523d1",
+  "selected_using": "validation labels only"
+}

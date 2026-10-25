@@ -1,0 +1,15 @@
+{
+  "balance_verified": false,
+  "multiplier_verified": false,
+  "auto_stop_verified": false,
+  "persistent_storage_verified": false,
+  "billing_unit": "unverified",
+  "available_points": null,
+  "points_per_minute": null,
+  "previous_cloud_points": 0,
+  "previous_gpu_minutes": 0,
+  "session_minutes": null,
+  "started_at_utc": null,
+  "auto_stop_at_utc": null,
+  "evidence_note": "Complete only after observing actual platform values and reliable automatic termination. This template does not stop a server."
+}

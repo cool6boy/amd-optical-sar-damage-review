@@ -1,0 +1,220 @@
+{
+  "scope": "Known-location crop classification, pre-event optical/post-event SAR",
+  "classification": {
+    "optical": {
+      "n": 2410,
+      "confusion_matrix": [
+        [
+          1532,
+          513,
+          143
+        ],
+        [
+          39,
+          15,
+          1
+        ],
+        [
+          126,
+          33,
+          8
+        ]
+      ],
+      "class_recall": [
+        0.70018281535649,
+        0.2727272727272727,
+        0.04790419161676647
+      ],
+      "macro_f1": 0.29584414239586654,
+      "damaged_as_intact": 165,
+      "damaged_as_intact_rate": 0.7432432432432432
+    },
+    "sar": {
+      "n": 2410,
+      "confusion_matrix": [
+        [
+          856,
+          848,
+          484
+        ],
+        [
+          32,
+          13,
+          10
+        ],
+        [
+          61,
+          81,
+          25
+        ]
+      ],
+      "class_recall": [
+        0.3912248628884826,
+        0.23636363636363636,
+        0.1497005988023952
+      ],
+      "macro_f1": 0.21490295793599035,
+      "damaged_as_intact": 93,
+      "damaged_as_intact_rate": 0.4189189189189189
+    },
+    "fusion": {
+      "n": 2410,
+      "confusion_matrix": [
+        [
+          1002,
+          750,
+          436
+        ],
+        [
+          33,
+          13,
+          9
+        ],
+        [
+          69,
+          76,
+          22
+        ]
+      ],
+      "class_recall": [
+        0.4579524680073126,
+        0.23636363636363636,
+        0.1317365269461078
+      ],
+      "macro_f1": 0.23574396204350256,
+      "damaged_as_intact": 102,
+      "damaged_as_intact_rate": 0.4594594594594595
+    }
+  },
+  "review": [
+    {
+      "method": "uncertainty",
+      "requested_fraction": 0.1,
+      "simulation": "ideal label-oracle review; not measured human performance",
+      "review_count": 241,
+      "errors_found": 158,
+      "error_capture_rate": 0.11507647487254188,
+      "damaged_misses_found": 9,
+      "remaining_errors": 1215,
+      "remaining_unreviewed_n": 2169,
+      "remaining_unreviewed_error_rate": 0.5601659751037344,
+      "remaining_damaged_as_intact": 93
+    },
+    {
+      "method": "combined",
+      "requested_fraction": 0.1,
+      "simulation": "ideal label-oracle review; not measured human performance",
+      "review_count": 241,
+      "errors_found": 166,
+      "error_capture_rate": 0.12090313182811362,
+      "damaged_misses_found": 11,
+      "remaining_errors": 1207,
+      "remaining_unreviewed_n": 2169,
+      "remaining_unreviewed_error_rate": 0.5564776394651914,
+      "remaining_damaged_as_intact": 91
+    },
+    {
+      "method": "random",
+      "requested_fraction": 0.1,
+      "repeats": 100,
+      "review_count": 241,
+      "simulation": "ideal label-oracle review; not measured human performance",
+      "errors_found_mean": 137.96,
+      "errors_found_std": 7.453750733691059,
+      "remaining_errors_mean": 1235.04,
+      "remaining_errors_std": 7.453750733691059,
+      "remaining_unreviewed_error_rate_mean": 0.5694052558782849,
+      "remaining_unreviewed_error_rate_std": 0.00343649180898619,
+      "remaining_damaged_as_intact_mean": 91.51,
+      "remaining_damaged_as_intact_std": 3.2046684695924474,
+      "damaged_misses_found_mean": 10.49,
+      "damaged_misses_found_std": 3.2046684695924474
+    },
+    {
+      "method": "uncertainty",
+      "requested_fraction": 0.2,
+      "simulation": "ideal label-oracle review; not measured human performance",
+      "review_count": 482,
+      "errors_found": 298,
+      "error_capture_rate": 0.21704297159504735,
+      "damaged_misses_found": 19,
+      "remaining_errors": 1075,
+      "remaining_unreviewed_n": 1928,
+      "remaining_unreviewed_error_rate": 0.5575726141078838,
+      "remaining_damaged_as_intact": 83
+    },
+    {
+      "method": "combined",
+      "requested_fraction": 0.2,
+      "simulation": "ideal label-oracle review; not measured human performance",
+      "review_count": 482,
+      "errors_found": 325,
+      "error_capture_rate": 0.23670793882010197,
+      "damaged_misses_found": 18,
+      "remaining_errors": 1048,
+      "remaining_unreviewed_n": 1928,
+      "remaining_unreviewed_error_rate": 0.5435684647302904,
+      "remaining_damaged_as_intact": 84
+    },
+    {
+      "method": "random",
+      "requested_fraction": 0.2,
+      "repeats": 100,
+      "review_count": 482,
+      "simulation": "ideal label-oracle review; not measured human performance",
+      "errors_found_mean": 273.37,
+      "errors_found_std": 10.517276263367812,
+      "remaining_errors_mean": 1099.63,
+      "remaining_errors_std": 10.517276263367812,
+      "remaining_unreviewed_error_rate_mean": 0.570347510373444,
+      "remaining_unreviewed_error_rate_std": 0.005455018808800731,
+      "remaining_damaged_as_intact_mean": 81.79,
+      "remaining_damaged_as_intact_std": 3.891773374696939,
+      "damaged_misses_found_mean": 20.21,
+      "damaged_misses_found_std": 3.891773374696939
+    },
+    {
+      "method": "uncertainty",
+      "requested_fraction": 0.3,
+      "simulation": "ideal label-oracle review; not measured human performance",
+      "review_count": 723,
+      "errors_found": 436,
+      "error_capture_rate": 0.3175528040786599,
+      "damaged_misses_found": 26,
+      "remaining_errors": 937,
+      "remaining_unreviewed_n": 1687,
+      "remaining_unreviewed_error_rate": 0.5554238292827505,
+      "remaining_damaged_as_intact": 76
+    },
+    {
+      "method": "combined",
+      "requested_fraction": 0.3,
+      "simulation": "ideal label-oracle review; not measured human performance",
+      "review_count": 723,
+      "errors_found": 478,
+      "error_capture_rate": 0.3481427530954115,
+      "damaged_misses_found": 30,
+      "remaining_errors": 895,
+      "remaining_unreviewed_n": 1687,
+      "remaining_unreviewed_error_rate": 0.5305275637225845,
+      "remaining_damaged_as_intact": 72
+    },
+    {
+      "method": "random",
+      "requested_fraction": 0.3,
+      "repeats": 100,
+      "review_count": 723,
+      "simulation": "ideal label-oracle review; not measured human performance",
+      "errors_found_mean": 410.24,
+      "errors_found_std": 11.369362339199151,
+      "remaining_errors_mean": 962.76,
+      "remaining_errors_std": 11.369362339199151,
+      "remaining_unreviewed_error_rate_mean": 0.5706935388263189,
+      "remaining_unreviewed_error_rate_std": 0.00673939676301076,
+      "remaining_damaged_as_intact_mean": 71.56,
+      "remaining_damaged_as_intact_std": 4.325089594447727,
+      "damaged_misses_found_mean": 30.44,
+      "damaged_misses_found_std": 4.325089594447727
+    }
+  ]
+}

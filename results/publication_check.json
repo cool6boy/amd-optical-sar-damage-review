@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-25",
+  "original_handoff_sha256": "ceca0c0f4a977c9d4de42ed4a9addf33bb3bb72890517f4edcf6c63ddd463f75",
+  "initial_linkage_checks": 17,
+  "unit_tests": 31,
+  "unit_tests_exit": 0,
+  "result_verification": {
+    "status": "passed",
+    "checks": 90,
+    "test_buildings": 2410,
+    "fusion_errors": 1373,
+    "damaged_to_intact": 102,
+    "full_release_checked": false,
+    "scope": "File, table and ranking consistency; not a training rerun or feature-content verification."
+  },
+  "source_changes": [
+    "Replace fixed /tmp fixture paths with isolated TemporaryDirectory in two existing tests"
+  ],
+  "experiment_rerun": false,
+  "feature_content_available": false,
+  "human_review_measured": false
+}

@@ -1,0 +1,4 @@
+# Keep the AMD platform's existing ROCm torch/torchvision. Do not replace with CUDA wheels.
+numpy>=1.24
+Pillow>=10
+rasterio>=1.3

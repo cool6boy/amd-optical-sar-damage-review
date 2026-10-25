@@ -1,0 +1,7 @@
+# 运行记录的证据边界
+
+environment.json记录实际AMD ROCm环境；features_complete等记录文件关联和完成计数。它们与AUP实际账单、服务器Stopped状态不是同一证据。
+
+交接包包含runtime/session JSON，但未作为公开资产直接分发；敏感路径、会话私有信息和账单原件不需要公开。没有可独立核验的平台Usage时，本项目不发布准确实扣费用或GPU总会话时长。
+
+代码提供截止时间和保守时长预留检查，不负责停止平台计费。用户实际Stop My Server及Stopped确认属于平台操作，不能由退出终端、关闭页面或程序返回推断。

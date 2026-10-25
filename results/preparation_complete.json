@@ -1,0 +1,9 @@
+{
+  "manifest_sha256": "897c287af802c1f545d58f2af9121be851785869b49efd1915ab3e973c40c404",
+  "config_sha256": "21d113763bd98c9d525fab41e12240440b7cce83bf8846d17747eff55b2912d6",
+  "buildings": 5476,
+  "network_bytes": 1494606,
+  "scope": "Known-building bbox-conditioned classification; pre-event optical and post-event SAR; v2 expansion of train/val while preserving event isolation and test secrecy.",
+  "allow_missing_val_classes": true,
+  "warning": "Exploratory v2 validation keeps the real missing-class limitation explicit; no labels were fabricated."
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this course project, cite the software and the original BRIGHT dataset separately."
+title: "AMD Optical-SAR Building Damage Classification and Review Priority"
+type: software
+authors:
+  - name: "cool6boy"
+version: "0.2.0-course"
+date-released: "2026-10-25"
+repository-code: "https://github.com/cool6boy/amd-optical-sar-damage-review"
+license: MIT
